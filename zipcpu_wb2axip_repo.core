@@ -1,0 +1,20 @@
+CAPI=2:
+name : zipcpu:repo:wp2axip:1.0.0
+
+filesets:
+  dep:
+    depend:
+      - AFRL:utility:generators:1.0.0
+
+generate:
+  gen_git:
+    generator: git_pull
+    parameters:
+      repo_url: [https://github.com/ZipCPU/wb2axip.git]
+      repo_dir: [wb2axip]
+      tag: [master]
+
+targets:
+  default:
+    filesets: [dep]
+    generate: [gen_git]

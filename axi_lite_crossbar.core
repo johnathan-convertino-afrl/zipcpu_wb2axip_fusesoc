@@ -1,0 +1,18 @@
+CAPI=2:
+name : zipcpu:axi_lite:crossbar:1.0.0
+
+filesets:
+  rtl:
+    files:
+      - wb2axip/rtl/axilxbar.v
+    file_type : verilogSource
+
+  dep:
+    depend:
+      - zipcpu:decoder:addrdecode:1.0.0
+      - zipcpu:buffer:skidbuffer:1.0.0
+      - zipcpu:repo:wp2axip:1.0.0
+
+targets:
+  default:
+    filesets: [rtl, dep]
