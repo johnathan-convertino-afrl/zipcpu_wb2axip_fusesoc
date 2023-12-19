@@ -1,0 +1,16 @@
+CAPI=2:
+name : zipcpu:buffer:sfifo:1.0.0
+
+filesets:
+  rtl:
+    files:
+      - wb2axip/rtl/sfifo.v
+    file_type : verilogSource
+
+  dep:
+    depend:
+      - zipcpu:repo:wp2axip:1.0.0
+
+targets:
+  default:
+    filesets: [rtl, dep]

@@ -10,9 +10,9 @@ generate:
   gen_git:
     generator: git_pull
     parameters:
-      repo_url: [https://github.com/ZipCPU/wb2axip.git]
-      repo_dir: [wb2axip]
-      tag: [master]
+      repo_url: https://github.com/ZipCPU/wb2axip.git
+      repo_dir: wb2axip
+      tag: master
 
 targets:
   default:
