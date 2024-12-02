@@ -1,0 +1,17 @@
+CAPI=2:
+name : zipcpu:axi:axixclk:1.0.0
+
+filesets:
+  rtl:
+    files:
+      - wb2axip/rtl/axixclk.v
+    file_type : verilogSource
+
+  dep:
+    depend:
+      - zipcpu:buffer:afifo:1.0.0
+      - zipcpu:repo:wp2axip:1.0.0
+
+targets:
+  default:
+    filesets: [rtl, dep]
