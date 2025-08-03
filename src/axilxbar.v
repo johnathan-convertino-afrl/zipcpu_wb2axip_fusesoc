@@ -191,8 +191,8 @@ module	axilxbar #(
 	);
 	// Moved due to quartus prime standard errors, bad writing style and mixes system verilog with verilog the old way.
 	// AW, and DW, are short-hand abbreviations used locally.
-	localparam	AW = C_AXI_ADDR_WIDTH,
-	localparam	DW = C_AXI_DATA_WIDTH,
+	localparam	AW = C_AXI_ADDR_WIDTH;
+	localparam	DW = C_AXI_DATA_WIDTH;
 	//
 	// Local parameters, derived from those above
 	// {{{
