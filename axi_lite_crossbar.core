@@ -4,7 +4,7 @@ name : zipcpu:axi_lite:crossbar:1.0.0
 filesets:
   rtl:
     files:
-      - "tool_quartus ? (src/axilxbar.v)"  : {file_type: systemVerilogSource}
+      - "!tool_vivado ? (src/axilxbar.v)" : {file_type: systemVerilogSource}
       - "tool_vivado  ? (wb2axip/rtl/axilxbar.v)" : {file_type: systemVerilogSource}
 
   dep:
